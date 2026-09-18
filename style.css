@@ -1,0 +1,952 @@
+/* consistent box model and prevent scrollbar layout shift */
+html{ overflow-y: scroll; }
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    z-index: 1;
+}
+
+.header nav{
+    position: relative;
+    z-index: 2;
+}
+
+.header .text-box{
+    z-index: 2;
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #5be5d1;
+    display: block;
+    margin: auto;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #5be5d1;
+    background: #5be5d1;
+    transition: 1s;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .text-box h1{
+        font-size: 62px;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: #2c3e50;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+    
+}
+
+
+
+/*----- Programes Section -----*/
+
+.programes{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    color: #457bb1;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px ;
+    
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.programe-col {
+    flex-basis: 31%;
+    background: #f3f7f9;
+    border-radius: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3 {
+    color: #053666;
+   text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.programe-col:hover{
+    box-shadow: 0 0 20px 0 rgb(0,0,0,0.2);
+    
+}
+
+@media (max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
+    
+}
+
+/*----- Areas Served Section -----*/
+
+.areas-served{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.areas-served-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.areas-served-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.areas-served-col img{
+    width: 100%;
+    display: block;
+    
+}
+
+.layer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.0);
+    color: #fff;
+    padding: 18px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 0.35s ease, background 0.35s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.areas-served-col:hover .layer{
+    transform: translateY(0);
+    background: rgba(0,0,0,0.55);
+}
+
+.areas-served-col:hover .layer h3{
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    color: #89aee9;
+    transform: translateY(-50%);
+    transition-delay: 0.1s;
+}
+
+/*----- Recyclable Items Section -----*/
+.recyclable-items{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.recyclable-item-col{
+    flex-basis: 23%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+.recyclable-item-col img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+@media (max-width: 700px){
+    .recyclable-item-col{ flex-basis: 100%; }
+}
+
+.recyclable-item-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    color: #053666;
+    text-align: center;
+}
+
+.recyclable-item-col p{
+    padding: 0;
+}
+
+
+
+/*----- Testimonials Section -----*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+ 
+.testimonial-col{
+    flex-basis: 44%;
+    background: #f3f7f9;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding: 25px;
+    display: flex;
+}
+
+.testimonial-col img{
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+    margin-left: 50px;
+}
+
+.testimonial-col p{
+    padding: 0;
+
+}
+
+.testimonial-col h3{
+    margin-top: 10px;
+    text-align: left;
+}
+
+.testimonial-col i{
+    color: #f9b707;
+    margin-right: 2px;
+}
+
+@media (max-width: 700px){
+    .testimonial-col{ flex-basis: 100%; }
+
+    .testimonial-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    
+}
+
+/*----- Mini Gallery: Clean City at Work -----*/
+.mini-gallery{
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+}
+.mini-gallery h1{
+    color: #457bb1;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+.mini-gallery p{
+    color: #777;
+    margin-bottom: 24px;
+}
+.gallery-row{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+.gallery-col{
+    flex-basis: 18%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.gallery-col img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+@media (max-width: 900px){
+    .gallery-col img{ height: 110px; }
+}
+@media (max-width: 700px){
+    .gallery-row{ flex-direction: row; flex-wrap: wrap; }
+    .gallery-col{ flex-basis: 48%; margin-bottom: 12px; }
+}
+@media (max-width: 420px){
+    .gallery-col{ flex-basis: 100%; }
+}
+
+
+
+/*----- CTA Section -----*/
+
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('images/banner2.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    font-size: 40px;
+    padding: 0;
+}
+
+@media (max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+/*----- Footer Section -----*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa-brands{
+    color: #053666;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.fa-copyright {
+    color: #053666;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/*-----  About page -----*/
+
+/* Sub-header for internal pages (keeps text-box positioned without collapsing flow) */
+.sub-header{
+    min-height: 50vh;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('images/banner3.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+}
+
+.sub-header h1{
+    margin-top: 20px;
+    color: #fff;
+}
+
+.sub-header p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* responsive behavior: make hero/subtext box flow on small screens */
+@media (max-width: 700px){
+    .header .text-box,
+    .sub-header .text-box{
+        position: static;
+        transform: none;
+        margin: 24px auto 0;
+        width: calc(100% - 32px);
+        padding: 18px;
+        box-shadow: none;
+        
+    }
+    .header .text-box h1,
+    .sub-header .text-box h1{
+        font-size: 36px;
+    }
+    .header .text-box p,
+    .sub-header .text-box p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 420px){
+    .header .text-box h1,
+    .sub-header .text-box h1{
+        font-size: 28px;
+    }
+    .header .text-box,
+    .sub-header .text-box{
+        padding: 14px;
+        width: calc(100% - 24px);
+    }
+}
+
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img{
+    width: 100%;
+    
+}
+
+.about-col h1{
+    color: #053666;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.about-col p{
+    
+    padding: 15px 0 25px;
+}
+
+.blue-btn{
+    background: transparent;
+    color: #5be5d1;
+    border: 1px solid #5be5d1;
+}
+
+.blue-btn:hover{
+    background: #5be5d1;
+    color: #fff;
+    transition: 1s;
+}
+
+/*-----  Services page -----*/
+.sub-header-services{
+    min-height: 50vh;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('images/banner4.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+}
+
+.sub-header-services h1{
+    margin-top: 20px;
+    color: #fff;
+}
+
+.sub-header-services p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/*-----  Enquiries page -----*/
+
+/* Own banner for this page, following the same pattern as .sub-header-services */
+.sub-header-enquiries{
+    min-height: 50vh;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('images/banner5.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.sub-header-enquiries h1{
+    margin-top: 20px;
+    color: #fff;
+}
+
+.sub-header-enquiries p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* form + contact column sit side by side, reusing .about-us / .row / .about-col */
+.enquiry-section .row{
+    align-items: flex-start;
+}
+.cta-Involved {
+    margin: 100px auto;
+    width: 80%;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('images/banner2.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.enquiry-form-col h1,
+.enquiry-contact-col h1{
+    color: #053666;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.enquiry-form{
+    margin-top: 10px;
+}
+
+.form-group{
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.form-group label{
+    display: block;
+    color: #053666;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+    background: #f3f7f9;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    outline: none;
+    border-color: #5be5d1;
+}
+
+.form-group textarea{
+    resize: vertical;
+}
+
+.enquiry-form button[type="submit"]{
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enquiry-contact-col img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contact-list{
+    margin-top: 15px;
+}
+
+.contact-list li{
+    list-style: none;
+    color: #777;
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-list li i{
+    color: #5be5d1;
+    width: 22px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+/* Get-involved cards reuse .programes / .programe-col; just style the new icon */
+.get-involved .programe-col i{
+    display: block;
+    font-size: 30px;
+    color: #5be5d1;
+    margin-bottom: 12px;
+}
+
+/* FAQ section */
+.faq{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.faq-list{
+    margin-top: 30px;
+    text-align: left;
+}
+
+.faq-item{
+    background: #f3f7f9;
+    border-radius: 5px;
+    padding: 20px 25px;
+    margin-bottom: 15px;
+}
+
+.faq-item h3{
+    color: #053666;
+    text-align: left;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.faq-item h3 i{
+    color: #5be5d1;
+    margin-right: 8px;
+}
+
+.faq-item p{
+    padding: 0;
+}
+
+@media (max-width: 700px){
+    .enquiry-contact-col{
+        margin-top: 20px;
+    }
+}
+
+/*-----  Get Involved page -----*/
+
+/* CTA text on this page (the base .cta only had an h1 + button before) */
+.cta .cta-text{
+    color: #fff;
+    max-width: 700px;
+    margin: 15px auto 30px;
+}
+
+/*----- Locations / Map Section -----*/
+.locations{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.locations-row{
+    margin-top: 5%;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.locations-map{
+    flex-basis: 60%;
+}
+
+.map-embed{
+    width: 100%;
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.map-embed iframe{
+    display: block;
+}
+
+.locations-list{
+    flex-basis: 36%;
+}
+
+.location-item{
+    display: flex;
+    align-items: flex-start;
+    background: #f3f7f9;
+    border-radius: 5px;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+
+.location-item i{
+    color: #5be5d1;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-top: 4px;
+}
+
+.location-item h3{
+    text-align: left;
+    margin: 0 0 6px;
+}
+
+.location-item p{
+    padding: 0;
+    text-align: left;
+}
+
+@media (max-width: 700px){
+    .locations-row{
+        flex-direction: column;
+    }
+    .locations-map,
+    .locations-list{
+        flex-basis: 100%;
+    }
+}
+
+/*----- Upcoming Events Section -----*/
+.upcoming-events .event-col{
+    flex-basis: 31%;
+    background: #f3f7f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 0 0 20px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.event-col img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.event-date{
+    color: #5be5d1;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 15px 15px 0;
+}
+
+.event-date i{
+    margin-right: 6px;
+}
+
+.event-col h3{
+    text-align: left;
+    padding: 0 15px;
+}
+
+.event-col p{
+    text-align: left;
+}
+
+.event-col:hover{
+    box-shadow: 0 0 20px 0 rgb(0,0,0,0.2);
+}
+
+@media (max-width: 700px){
+    .upcoming-events .event-col{
+        flex-basis: 100%;
+    }
+}
+
+/*----- Our Impact Strip -----*/
+.impact-strip{
+    margin-bottom: 60px;
+}
+
+.impact-row{
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.impact-col{
+    flex-basis: 20%;
+    background: #f3f7f9;
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.impact-col i{
+    font-size: 30px;
+    color: #5be5d1;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.impact-col h3{
+    color: #053666;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+.impact-col p{
+    margin-top: 5px;
+}
+
+@media (max-width: 700px){
+    .impact-col{
+        flex-basis: 45%;
+    }
+}

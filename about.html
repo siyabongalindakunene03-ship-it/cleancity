@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clean city web site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <!-- Header Section -->
+
+    <section class="sub-header">
+      
+      <nav>
+        <a href="index.html"
+          ><img src="images/clean-city-logo-reversed.png" alt="Logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+          <ul id="menuItems">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="get-involved.html">GET INVOLVED</a></li>
+            <li><a href="enquiries.html">ENQUIRIES</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="sub-text-box">
+        <h1>About Clean City</h1>
+        <p>
+          We are committed to creating cleaner, healthier communities through recycling, education and local action.
+        </p>
+      </div>
+    </section>
+
+    <!--- About content --->
+
+    <section class="about-us">
+      <div class="brif">
+        <h1>Our Way. the Clean City Difference</h1>
+      <p>
+        Clean City is a community-driven initiative that aims to promote sustainable practices and environmental responsibility. We work with local residents, businesses, and organizations to reduce waste, increase recycling, and create cleaner, healthier communities. Our programs include educational workshops, community clean-up events, and partnerships with local businesses to promote eco-friendly practices.
+      </p>
+      </div>
+      <div class="row">
+        <div class="about-col">
+          <h1>Our Mission</h1>
+          <p>
+            Our mission is to promote sustainable practices and environmental responsibility in our community. 
+            We strive to reduce waste, increase recycling, and create a cleaner, healthier environment for all residents.
+            Together, we can make a positive impact on our community and the planet. For everyone, everywhere, every day, we are committed to creating a better, healthier world.
+          </p>
+          <a href="" class="hero-btn blue-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="images/about.jpg" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="about-col">
+          <img src="images/about1.jpg" />
+        </div>
+        <div class="about-col">
+          <h1>Our Values</h1>
+          <p>
+            We value sustainability, community engagement, and environmental responsibility. 
+            We believe that by working together, we can create a cleaner, healthier environment for all residents. 
+            Our programs and initiatives are designed to promote these values and make a positive impact on our community.
+          </p>
+          <a href="" class="hero-btn blue-btn">EXPLORE NOW</a>
+        </div>
+        
+      </div>
+
+      <!-- Mini Gallery: Clean City at Work -->
+          <section class="mini-gallery">
+            <h1>Clean City at Work</h1>
+            <p>Snapshots showing our teams and volunteers keeping the city clean — community events, recycling, and maintenance in action.</p>
+
+            <div class="gallery-row">
+              <div class="gallery-col">
+                <img src="images/g1.jpeg" alt="Clean City at Work 1" />
+              </div>
+              <div class="gallery-col">
+                <img src="images/g2.jpeg" alt="Clean City at Work 2" />
+              </div>
+              <div class="gallery-col">
+                <img src="images/g3.jpeg" alt="Clean City at Work 3" />
+              </div>
+              <div class="gallery-col">
+                <img src="images/g4.jpg" alt="Clean City at Work 4" />
+              </div>
+              <div class="gallery-col">
+                <img src="images/g5.jpg" alt="Clean City at Work 5" />
+              </div>
+            </div>
+          </section>
+
+
+    
+
+
+
+    
+
+    <!---- Footer --->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Clean City Recycling is dedicated to promoting sustainable practices and environmental responsibility in our community. Searching for ways to reduce waste and protect our environment.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Founded in <i class="fa-regular fa-copyright"></i> 2023 Clean City Recycling Company. All rights reserved.</p>
+    </section>
+
+
+
+
+
+    <!--- javascript for toggle menu --->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

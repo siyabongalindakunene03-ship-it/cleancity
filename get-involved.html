@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clean city web site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <!-- Header Section -->
+
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/clean-city-logo-reversed.png" alt="Logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+          <ul id="menuItems">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="get-involved.html">GET INVOLVED</a></li>
+            <li><a href="enquiries.html">ENQUIRIES</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="sub-text-box">
+        <h1>Let's Make a Difference Together</h1>
+        <p>
+          We are committed to creating cleaner, healthier communities through recycling, education and local action. If you have any questions or would like to learn more about our programs and services, please don't hesitate to reach out to us. Our team is always happy to help and provide information on how you can get involved in making a positive impact on our environment.
+        </p>
+      </div>
+    </section>
+
+    <!--- Get Involved content --->
+
+    <!-- Call to Action: send people to Enquiries -->
+    <section class="cta">
+      <h1>Ready to Get Involved?</h1>
+      <p class="cta-text">
+        Whether you want to volunteer at an event, ask a question, or partner with us, it starts with a quick message. Reach out and our team will get back to you within 2 business days.
+      </p>
+      <a href="enquiries.html" class="hero-btn">Visit Our Enquiries Page</a>
+    </section>
+
+    <!-- Locations / Map Section -->
+    <section class="locations">
+      <h1>Find Us Around the City</h1>
+      <p>
+        Our offices and drop-off points are spread across Braamfontein, Newtown and Hillbrow, so
+        there's always a Clean City team close by. Explore the map below to find your nearest
+        location, plan a visit, or see where the next clean-up drive is happening.
+      </p>
+
+      <div class="row locations-row">
+        <div class="locations-map">
+          <!-- Google Maps embed -->
+          <div id="clean-city-map" class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14326.494762140721!2d28.034624083702198!3d-26.143810019878128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srosebank%20college!5e0!3m2!1sen!2sza!4v1789723046125!5m2!1sen!2sza"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="locations-list">
+          <div class="location-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h3>Braamfontein Office</h3>
+              <p>Our main hub for waste management coordination and volunteer sign-ups.</p>
+            </div>
+          </div>
+          <div class="location-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h3>Newtown Drop-Off Point</h3>
+              <p>Bring your recyclables — paper, plastic, glass and metal — any weekday.</p>
+            </div>
+          </div>
+          <div class="location-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h3>Hillbrow Community Centre</h3>
+              <p>Home to our clean-up events, workshops and community meetings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="programes upcoming-events">
+      <h1>Upcoming Events</h1>
+      <p>
+        Join one of our upcoming clean-up drives or workshops. No experience necessary — just a
+        willingness to help make your neighbourhood cleaner.
+      </p>
+
+      <div class="row">
+        <div class="event-col">
+          <img src="images/event-poster-1-braamfontein.svg" alt="Braamfontein community clean-up event" />
+          <div class="event-date"><i class="fa-solid fa-calendar-days"></i> 04 October 2026</div>
+          <h3>Braamfontein Street Clean-Up</h3>
+          <p>
+            Grab a pair of gloves and join residents and volunteers for a morning of clearing
+            litter along the main streets and public spaces of Braamfontein.
+          </p>
+        </div>
+        <div class="event-col">
+          <img src="images/event-poster-2-newtown.svg" alt="Recycling workshop in Newtown" />
+          <div class="event-date"><i class="fa-solid fa-calendar-days"></i> 18 October 2026</div>
+          <h3>Recycling 101 Workshop</h3>
+          <p>
+            A hands-on session on sorting recyclables correctly, reducing household waste, and
+            getting the most out of our drop-off points.
+          </p>
+        </div>
+        <div class="event-col">
+          <img src="images/event-poster-3-hillbrow.svg" alt="Hillbrow community clean-up event" />
+          <div class="event-date"><i class="fa-solid fa-calendar-days"></i> 01 November 2026</div>
+          <h3>Hillbrow Community Day</h3>
+          <p>
+            A full day of clean-up activities, recycling drop-offs, and family-friendly
+            environmental education at the Hillbrow Community Centre.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Impact strip -->
+    <section class="mini-gallery impact-strip">
+      <h1>Our Impact So Far</h1>
+      <p>Every event, drop-off and volunteer hour adds up. Here's what our community has achieved together.</p>
+
+      <div class="row impact-row">
+        <div class="impact-col">
+          <i class="fa-solid fa-recycle"></i>
+          <h3>12,500kg</h3>
+          <p>Waste recycled</p>
+        </div>
+        <div class="impact-col">
+          <i class="fa-solid fa-people-group"></i>
+          <h3>860+</h3>
+          <p>Volunteers involved</p>
+        </div>
+        <div class="impact-col">
+          <i class="fa-solid fa-broom"></i>
+          <h3>45</h3>
+          <p>Clean-up events held</p>
+        </div>
+        <div class="impact-col">
+          <i class="fa-solid fa-city"></i>
+          <h3>3</h3>
+          <p>Areas served</p>
+        </div>
+      </div>
+    </section>
+
+    <!---- Footer --->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Clean City Recycling is dedicated to promoting sustainable practices and environmental responsibility in our community. Searching for ways to reduce waste and protect our environment.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Founded in <i class="fa-regular fa-copyright"></i> 2023 Clean City Recycling Company. All rights reserved.</p>
+    </section>
+
+    <!--- javascript for toggle menu --->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
