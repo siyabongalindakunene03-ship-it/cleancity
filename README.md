@@ -1,386 +1,261 @@
-<img width="1920" height="1200" alt="p1 (8)" src="https://github.com/user-attachments/assets/863f29bf-a216-4e76-8607-2708a980754f" /><img width="1920" height="1200" alt="Screenshot (113)" src="https://github.com/user-attachments/assets/cfa5fbf1-d3cb-4683-a2d6-be49c850b88f" /># cleancity
-# Clean City Website – WEDE5020POE (Part 1)
+# Clean City Website – WEDE5020 POE (Part 3)
 
 ## Student Information
-- **Name:** Siyabonga linda kunene
-- **Student Number:** ST10484674
+- **Name:** Siyabonga Linda Kunene
+- **Student number:** ST10484674
 - **Group:** 4
-- **Subject:** WEDE5020 – Website Development
-- **Institution:** The IIE RoseBank International
+- **Module:** WEDE5020 – Web Development (Introduction)
+- **Institution:** The IIE's Rosebank College
 
-. Project Overview
-This project is a responsive informational website developed as part of the Website Project assessment.
+**Repository:** https://github.com/siyabongalindakunene03-ship-it/cleancity
+**Live site (GitHub Pages):** https://siyabongalindakunene03-ship-it.github.io/cleancity/
 
-The website was developed progressively from the original Part 1 proposal. The development process involved reviewing the original structure, identifying areas for improvement, implementing feedback, and extending the website with additional content and functionality.
+---
 
-The final website focuses on providing users with clear information about the organisation, its services, activities and opportunities for involvement.
+## 1. Project Overview
+Clean City is a responsive, multi-page website for a fictional Johannesburg recycling and community-clean-up organisation that serves **Braamfontein, Newtown and Hillbrow**. Part 1 planned the site, Part 2 built the pages with HTML and CSS, and **Part 3 (this version)** adds interactivity, search-engine optimisation, performance and security improvements, working forms and deployment.
 
-The website was developed using HTML5 and CSS3, with supporting web technologies and external resources where appropriate.
+### Goals
+- Explain clearly who Clean City is and what it offers.
+- Make services, events and locations easy to find (navigation, search, filters, map).
+- Let visitors take action: volunteer, ask for a quote, or contact the team.
+- Work well on phones, tablets and desktops, and for people using keyboards or screen readers.
+- Load quickly and be easy for search engines to understand.
 
-2. Project Goals and Objectives
-The main objectives of the website are to:
+## 2. Website Structure
 
-Present the organisation and its purpose clearly.
-
-Provide users with information about the organisation's background and services.
-
-Make important information easy to find through clear navigation.
-
-Encourage users to become involved with the organisation.
-
-Present events and activities in an engaging visual format.
-
-Provide users with a way to find the organisation's location.
-
-Create a consistent visual identity throughout the website.
-
-Ensure that the website can be viewed across different screen sizes.
-
-Apply feedback from the earlier stage of the project to improve the final website.
-
-Maintain clear documentation of the development process.
-
-3. Final Website Structure
-The final website consists of the following five main pages:
-
-Page	Purpose
-Home	Introduces the organisation and provides an overview of the website.
-About	Provides information about the organisation, its background and purpose.
-Services	Describes the services and activities provided by the organisation.
-Get Involved	Provides information about opportunities for users to participate, support or become involved.
-Enquiries	Provides contact and enquiry information for users who require further assistance.
-
-Change from the Part 1 proposal
-The original Part 1 documentation included a Contact page.
-
-During development, this structure was reconsidered and the Contact page was replaced with a Get Involved page, while enquiry/contact information was incorporated into the Enquiries page.
-
-This change was made to create a clearer distinction between:
-
-users who want to learn about the organisation;
-
-users who want to participate or support the organisation; and
-
-users who have a specific enquiry.
-
-The final navigation and README therefore reflect the actual website rather than the original proposed structure.
-
-4. Feedback Addressed Since Part 1
-The following improvements were made in response to feedback identified during the review of the Part 1 documentation.
-
-Part 1 Feedback	Action Taken	Result
-The documented page structure did not match the developing website.	Updated the website structure and documentation to reflect the final five-page structure.	The README and website now describe the same pages.
-The original Contact page did not clearly represent the intended user journey.	Replaced the Contact page with a dedicated Get Involved page and retained enquiry functionality through the Enquiries page.	User journeys are more clearly separated.
-The changelog did not demonstrate changes made in response to feedback.	Added this dedicated Feedback Addressed Since Part 1 section.	The development process and response to feedback are explicitly documented.
-The original changelog stopped before the later development work.	Extended the changelog to include the subsequent website development.	The README now documents continued development rather than only the initial proposal.
-The project documentation did not contain a References section.	Added a References section using traceable sources in an IIE Harvard-style format.	External resources and technical documentation are formally acknowledged.
-The documentation did not explain how the project could be viewed or understood technically.	Added a Technology and Setup section.	The README provides clearer technical information for the assessor.
-The website required additional visual engagement.	Added a background video banner and visual event/poster content.	The website has stronger visual communication and presentation.
-Location information needed to be accessible to users.	Added a Google Maps embed.	Users can view the organisation's location directly from the website.
-Styling and layout required further development beyond the initial proposal.	Expanded CSS styling and responsive layout rules.	The final website has a more developed and consistent visual presentation.
-
-5. Final Website Features
-The final website includes the following features:
-
-Responsive Navigation
-The website uses a consistent navigation structure across the main pages.
-
-The navigation provides access to:
-
-Home
-
-About
-
-Services
-
-Get Involved
-
-Enquiries
-
-Responsive CSS is used to adapt the layout for different screen sizes.
-
-Background Video Banner
-A background video has been incorporated into the website to create a more engaging hero/banner area.
-
-The HTML <video> element supports embedded video playback and allows attributes such as autoplay, looping and muted playback to be configured. 
-M
-MDN Web Docs
-
-The video is positioned and styled using CSS so that it functions as a visual background while the relevant website content remains visible.
-
-Event and Poster Content
-Visual event/poster content was added to communicate activities and events in a more engaging format.
-
-The posters are incorporated into the website content using image-based presentation and CSS styling.
-
-This development extends the original Part 1 concept by giving users a more visual way of discovering activities and opportunities.
-
-Google Maps Integration
-A Google Maps embed has been included to help users locate the organisation.
-
-The Google Maps Embed API allows interactive maps to be embedded into a webpage using an iframe-based implementation. 
-G
-Google for Developers
-
-The map is included as part of the site's location/enquiry information.
-
-Responsive CSS
-CSS media queries were used to support different viewport sizes.
-
-Media queries allow CSS rules to be conditionally applied according to characteristics such as viewport width, making them an important part of responsive web design. 
-M
-MDN Web Docs
-+1
-
-Flexbox was also used where appropriate to assist with the arrangement, alignment, and distribution of page elements. MDN describes Flexbox as a one-dimensional layout system designed for arranging and aligning interface elements. 
-M
-MDN Web Docs
-+1
-
-6. Technology and Development
-The website was developed using:
-
-HTML5 — page structure and semantic content.
-
-CSS3 — styling, layout, colours, typography, spacing and responsiveness.
-
-CSS Media Queries — responsive behaviour across different screen sizes.
-
-CSS Flexbox — flexible positioning and layout of content.
-
-HTML5 Video — background/hero video implementation.
-
-Google Maps Embed — interactive location map.
-
-Font Awesome — icons, where used.
-
-Google Fonts — typography, where used.
-
-Git/GitHub — version control and project submission, where applicable.
-
-Font Awesome provides web documentation for incorporating and styling icons in websites. 
-F
-Font Awesome Docs
-
-Google Fonts provides a web-based method of adding selected font families to a webpage through a stylesheet reference. 
-G
-Google for Developers
-
-7. Sitemap
-Home
-│
-├── About
-│
-├── Services
-│
-├── Get Involved
-│
-└── Enquiries
-
-The final sitemap reflects the implemented website rather than the earlier Part 1 proposal.
-**# 8. Screenshots of Final Website
-
-The screenshots below provide visual evidence of the implemented website and
-demonstrate the final design, navigation, content structure, and visual
-presentation.
-
-
-## 8.1 Home Page
-
-The Home page introduces Clean City and provides users with an overview of
-the organisation. It includes the main navigation, visual content, calls to
-action and information about the organisation.
-
-
-<img width="1920" height="1200" alt="p1 (1)" src="https://github.com/user-attachments/assets/f364a682-fd10-4547-9dea-53e95a379e32" />
-
-**Figure 1:** Clean City Home page showing the main website navigation,
-visual content and "Join Us in Making a Difference" call-to-action section.
-
-![Uploading p1 (8).png…]()
-
-**Figure 2:** Home page showing the About Us section, social media links,s and
-website footer.
-
-<img width="1920" height="1200" alt="Screenshot (114)" src="https://github.com/user-attachments/assets/23d89a5f-2539-4550-9fb7-d9ec961b9994" />
-
-
-# 9. Changelog and Development Timeline
-
-The project was developed progressively from the initial Part 1 proposal.
-The timeline below records the major stages of planning, feedback,
-development, and refinement leading to the final submission.
-
-| Date | Development / Change | Reason |
+| Page | File | Purpose |
 |---|---|---|
-| **17 August 2026** | Initial website structure and Part 1 content completed. | Established the proposed website structure, goals, content, and initial design direction. |
-| **19 August 2026** | Initial HTML pages and navigation structure developed. | Began converting the Part 1 proposal into a functional website. |
-| **21 August 2026** | Initial CSS styling and page layouts implemented. | Applied the proposed visual identity, typography, colours, spacing, and layout. |
-| **24 August 2026** | Part 1 feedback reviewed and development requirements identified. | Used the feedback to identify areas requiring improvement before the next stage. |
-| **26 August 2026** | Website page structure reviewed and refined. | Improved the navigation and clarified the purpose of each page. |
-| **28 August 2026** | Contact page concept revised and Get Involved page developed. | Created a clearer separation between users wanting to participate and users making enquiries. |
-| **31 August 2026** | Get Involved content and layout refined. | Improved the presentation of opportunities for users to participate in the organisation. |
-| **2 September 2026** | Background video/banner implemented. | Added stronger visual engagement to the website's hero section. |
-| **4 September 2026** | Event and poster content added. | Improved the visual presentation of activities and events. |
-| **7 September 2026** | Google Maps integration implemented. | Provided users with a convenient way to locate the organisation. |
-| **9 September 2026** | CSS styling expanded and page layouts refined. | Improved consistency, spacing, typography, colours,s and overall presentation. |
-| **11 September 2026** | Responsive styling and media queries reviewed and refined. | Improved the website's ability to adapt to different screen sizes. |
-| **13 September 2026** | Navigation and links checked across the website. | Ensured that the final page structure and navigation corresponded with the implemented website. |
-| **15 September 2026** | Website content and visual elements reviewed. | Corrected inconsistencies and prepared the website for final submission. |
-| **16 September 2026** | README documentation updated. | Documented the development process, feedback addressed, technologies, and final website structure. |
-| **17 September 2026** | References and project documentation finalised. | Ensured external resources were acknowledged and the README was complete. |
-| **18 September 2026** | **Final website and POE submission prepared.** | Final submission completed after reviewing the website documentation and supporting project files. |
+| Home | `index.html` | Introduces Clean City, programmes, areas served, impact numbers, what we recycle, testimonials |
+| About | `about.html` | Mission, values and a photo gallery with a lightbox |
+| Services | `services.html` | Programmes, searchable service list, recycling guide (tabs), areas served |
+| Get Involved | `get-involved.html` | Interactive map, searchable upcoming events with detail pop-ups, how volunteering works, directions |
+| Enquiries | `enquiry.html` | Enquiry form that answers with a cost or availability, FAQ accordion |
+| Contact | `contact.html` | Contact form that compiles an email to send to the team |
+| Not found | `404.html` | Friendly error page with links back into the site |
 
-10. Part 1 to Final Submission Development
-The website was not treated as a fixed product after Part 1.
+```
+Home
+├── About
+├── Services
+├── Get Involved
+├── Enquiries
+└── Contact
+```
 
-The development process involved using the original proposal as the starting point and then refining the website as implementation progressed.
+## 3. Part 3 Requirements and Where They Are Met
 
-The main development progression was:
+| Part 3 requirement | What was done | Where |
+|---|---|---|
+| Apply Part 2 feedback / fix issues | See the changelog in section 5 | whole site |
+| Interactive elements (jQuery) | Accordion (FAQ), tabs (recycling guide), modal (event details) built with jQuery and the matching WAI-ARIA patterns | `js/ui.js`, `enquiry.html`, `services.html`, `get-involved.html` |
+| Interactive map | Leaflet map with OpenStreetMap tiles, three markers, pop-ups, "show all locations" button; Google Maps embed for directions | `js/map.js`, `get-involved.html` |
+| Animations | Hero entrance animation, scroll-reveal of sections, animated impact counters, image zoom; all switched off for visitors who prefer reduced motion | `css/style.css`, `js/main.js` |
+| Gallery with lightbox | Keyboard- and touch-friendly lightbox with previous/next, captions, Esc to close and focus trapping | `about.html`, `js/main.js` |
+| Dynamic content | Services and events are built from `js/data.js` by JavaScript; past events disappear automatically | `js/listings.js`, `js/data.js` |
+| Search, filter and sort | Live search, category/type and area filters and several sort orders for services and events, with a result count and empty state | `services.html`, `get-involved.html` |
+| Form validation | Field-by-field JavaScript validation with accessible error messages, character counters and a honeypot field | `js/forms.js` |
+| Enquiry form with a response | After validation the enquiry is sent with AJAX and the page shows a cost estimate or availability based on the enquiry type | `enquiry.html`, `js/forms.js` |
+| Contact form that builds an email | After validation an email is compiled (To, Subject, Body) and the visitor sends it to the recipient set in `js/config.js` with one click, or copies it | `contact.html`, `js/forms.js` |
+| SEO | Unique titles and descriptions, one `h1` per page, heading hierarchy, alt text, descriptive file names, canonical links, Open Graph tags, JSON-LD structured data, internal links, `sitemap.xml`, `robots.txt` | all pages, section 6 |
+| Performance | Images compressed from 30.3 MB to 3.2 MB, hero video from 29.7 MB to 0.66 MB, lazy loading, deferred scripts, self-hosted libraries, fewer font weights | section 7 |
+| Security | Content-Security-Policy, no inline scripts or handlers, safe DOM writing, input sanitising, `rel="noopener"`, security headers file | section 8 |
+| Version control | Many small commits with descriptive messages | `git log` |
+| Documentation | This README with changelog and references | this file |
+| Deployment | GitHub Pages (or Netlify) | section 10 |
 
-Part 1 Proposal
+## 4. Feedback and Self-Review of the Part 2 Submission
+The Part 2 version was reviewed against the Part 3 brief and the following problems were found and fixed.
 
-→ Website goals and objectives established
-→ Initial sitemap and page structure created
-→ Initial design and content planned
+| Problem found in Part 2 | Fix in Part 3 |
+|---|---|
+| No JavaScript apart from the mobile menu; forms did nothing | Added the interactive features and working forms listed above |
+| No Contact page (the brief asks for `contact.html`) | Added `contact.html`; renamed `enquiries.html` to `enquiry.html` to match the brief |
+| Home page and Services page repeated the same long paragraphs (duplicate content) | Home now shows short, different summaries that link to the Services page; the three programme descriptions were rewritten so each is unique |
+| Every section title was an `<h1>` (many per page) | One `<h1>` per page, section titles are `<h2>`, card titles `<h3>` |
+| Page structure used `<section>` for header and footer, no `<main>` | Now uses `<header>`, `<nav>`, `<main>`, `<footer>`; skip link added |
+| All pages had the same title, `Clean city web site`, and no descriptions | Unique titles and meta descriptions for every page |
+| Several images had no `alt` text; some alt text was just "Logo" | Descriptive alt text on every image |
+| Empty links (`href=""`) on four buttons | Each button now goes to a real page |
+| Menu icons were `<i onclick>` and could not be used with a keyboard | Real `<button>` elements with `aria-expanded`; Esc closes the menu |
+| Map showed "Rosebank College" instead of the three Clean City areas | Replaced by the Leaflet map with three markers; Google map now points at Braamfontein |
+| "Upcoming events" listed dates that had already passed | New dates, and past events are hidden automatically |
+| Testimonials used the name of a real public figure | Replaced with fictional names |
+| Missing closing `</div>` in the testimonials row | Fixed |
+| Images up to 6 MB and a 30 MB autoplaying video | Compressed to web sizes (section 7) |
+| Grey text (#777) on white was below the 4.5:1 contrast minimum | Darkened to #555 |
+| Footer social icons were not links; footer text read "Founded in © 2023" | Icons are labelled links; footer text corrected |
+| README contained template instructions, a broken image and copied web-page labels | README rewritten |
 
-Feedback and Review
+## 5. Changelog (Part 3)
 
-→ Page structure reconsidered
-→ Documentation checked against the actual implementation
-→ Missing documentation areas identified
+| Date | Change | Reason |
+|---|---|---|
+| 1 Nov 2026 | Compressed and renamed all images; compressed hero video | Page speed and SEO-friendly file names |
+| 1 Nov 2026 | Added self-hosted jQuery, Leaflet and Font Awesome in `vendor/` | Speed, offline use and a strict Content-Security-Policy |
+| 1 Nov 2026 | Moved the stylesheet to `css/` and added Part 3 styles | Folder structure; accessibility and contrast fixes |
+| 1 Nov 2026 | Added `js/main.js` (menu, hero video control, reveal animation, counters, lightbox) | Interactivity |
+| 1 Nov 2026 | Added `js/ui.js` (accordion, tabs, modal with jQuery) | Interactive elements |
+| 1 Nov 2026 | Added `js/data.js` and `js/listings.js` (dynamic lists with search, filter, sort) | Dynamic content |
+| 1 Nov 2026 | Added `js/map.js` (Leaflet map) | Interactive map |
+| 1 Nov 2026 | Added `js/forms.js`, `js/config.js` (validation, AJAX enquiry, email builder) | Working forms |
+| 1 Nov 2026 | Rebuilt all pages with semantic HTML; added `contact.html`, `enquiry.html`, `404.html` | Structure, accessibility, SEO |
+| 1 Nov 2026 | Added `robots.txt`, `sitemap.xml`, favicons, structured data | SEO |
+| 1 Nov 2026 | Added `_headers` and a Content-Security-Policy | Security |
+| 1 Nov 2026 | Updated event poster dates to upcoming dates | Content accuracy |
+| 1 Nov 2026 | Rewrote this README | Documentation |
 
-Further Development
+Earlier history (Part 1 and Part 2): the structure was planned (August 2026), the five-page site was built with a video banner, event posters and a Google Maps embed (September 2026), and the Contact page was replaced by Get Involved and Enquiries. In Part 3 a dedicated Contact page was added back because the brief requires it.
 
-→ Get Involved page introduced
-→ Enquiries structure refined
-→ Video banner added
-→ Event/poster content added
-→ Google Maps added
-→ CSS expanded
-→ Responsive styling developed
+## 6. SEO Strategy
 
-Final Submission
+### Keyword targets
+Chosen from what the site offers and where it works. They should be validated with a tool such as Google Keyword Planner or Google Trends before launch.
 
-→ Website structure aligned with documentation
-→ README updated
-→ References added
-→ Screenshots documented
-→ Changelog extended
-→ Final website prepared for submission
+| Keyword | Page it targets |
+|---|---|
+| recycling Johannesburg | Home |
+| community clean-up Johannesburg | Get Involved |
+| recycling drop-off Newtown | Services |
+| household recycling pick-up Johannesburg | Services, Enquiries |
+| volunteer Braamfontein / Hillbrow clean-up | Get Involved |
+| recycling workshop for schools Johannesburg | Services |
+| report illegal dumping Johannesburg | Contact |
 
-11. How to View the Website
-The website can be viewed by opening the main HTML file:
+### On-page
+- Unique `<title>` (under 60 characters) and meta description (about 150 characters) per page.
+- One `<h1>` per page with the main topic; logical `<h2>` and `<h3>` headings below it.
+- Descriptive image file names (for example `recycling-glass-bottles.jpg`) and meaningful alt text.
+- Internal links between related pages (for example programme cards link to the service list, tabs and events).
+- Canonical link, Open Graph and Twitter card tags on every page.
+- JSON-LD structured data: `Organization` on the home page and `FAQPage` on the enquiry page.
+- Short, readable page addresses (`services.html`, `get-involved.html`).
 
-index.html
+### Technical
+- `sitemap.xml` lists the six public pages; `robots.txt` points to it and blocks `vendor/`.
+- Custom `404.html`, marked `noindex`.
+- Mobile-friendly responsive layout and fast loading (section 7).
+- If the site is hosted somewhere other than the GitHub Pages address above, search and replace that address in all `.html` files, `sitemap.xml` and `robots.txt`.
 
-The remaining pages can be accessed through the website navigation.
+### Off-page and local SEO (plan)
+- Create a Google Business Profile and keep the name, address and phone number identical to the footer and Contact page.
+- Add real social-media profile links in the footer (the icons currently link to each network's home page).
+- Ask partner schools and businesses to link to the Services and Events pages, and share each new event on social media with its page link.
 
-Project structure
-A simplified project structure is:
+## 7. Performance
 
-project-folder/
-│
-├── index.html
-├── about.html
-├── services.html
-├── get-involved.html
-├── enquiries.html
-│
+| Item | Before | After |
+|---|---|---|
+| Images folder (photos) | about 30.3 MB (single files up to 5.8 MB) | about 3.2 MB (largest 530 KB) |
+| Hero video | 29.7 MB, 4K, 15 s | 0.66 MB, 720p, 12 s loop |
+| Whole `images/` folder | about 58 MB | about 3.9 MB |
+| Third-party requests | Font Awesome (CDN) plus Google Fonts loading two families with every weight and italic | Font Awesome self-hosted; Google Fonts limited to 4 weights |
+
+Other techniques: `loading="lazy"` and `decoding="async"` on below-the-fold images, `width` and `height` on images (no layout shift), `defer` on every script, `preload` for the home hero image, `preconnect` for fonts, and the hero video pauses automatically for visitors who prefer reduced motion or have Data Saver on. `_headers` adds long cache times on Netlify.
+
+## 8. Security
+- **Content-Security-Policy** (meta tag, and `_headers` for Netlify): scripts only from this site, no inline scripts, frames only from Google Maps, tiles only from OpenStreetMap.
+- No inline `onclick` handlers or inline scripts anywhere.
+- Libraries are self-hosted (no unknown third-party scripts).
+- User text is only written to the page with `textContent`, never `innerHTML`; names are checked against a letters-only pattern.
+- Single-line fields have line breaks removed, and email parts are URL-encoded, so a visitor cannot inject extra email headers.
+- Hidden honeypot field to catch simple bots; length limits on every field.
+- External links use `rel="noopener noreferrer"`.
+- Referrer policy set to `strict-origin-when-cross-origin`.
+- GitHub Pages and Netlify both serve the site over HTTPS.
+
+## 9. Accessibility
+Skip link; semantic landmarks; keyboard-operable menu, accordion, tabs, modal and lightbox (arrow keys, Home/End, Esc, focus trapping and focus return); visible focus outlines; labelled form fields with `aria-invalid` and live error messages; pause control for the background video; `prefers-reduced-motion` respected; contrast improved.
+
+## 10. How to Run, Test and Deploy
+
+### Run locally
+1. Download or clone the repository.
+2. Double-click `index.html`. Everything works from the file, except the map tiles and Google directions which need an internet connection.
+3. For the most accurate test, serve the folder instead (for example with the VS Code **Live Server** extension, or `python -m http.server 8000` and open http://localhost:8000).
+
+### Test checklist
+- **Navigation:** every menu link works; on a narrow window the menu button opens and closes the menu.
+- **Services:** type "school", change the category, area and sort, then press Clear filters.
+- **Tabs:** open `services.html#guide-glass` and use the arrow keys on the tabs.
+- **Events:** filter by area, sort, then press View details and close with Esc.
+- **Map:** click each marker and each location button.
+- **Gallery:** open a photo on the About page, use the arrows and Esc.
+- **Enquiry form:** submit it empty (errors appear), then choose "Household pick-up quote", Newtown, 7 bags and a future date. The response should show R150 and the next Wednesday.
+- **Contact form:** fill it in and press Prepare my email. Check the To, Subject and Body, then use Open in my email app or Copy.
+
+### Settings you can change (`js/config.js`)
+- `recipientEmail`: where the contact email is addressed.
+- `formEndpoint`: leave empty for demo mode (nothing is sent). To receive real submissions, create a free form at formspree.io and paste its endpoint here.
+
+Prices, event dates and places are sample data in `js/data.js`.
+
+### Deploy to GitHub Pages
+1. Push the folder to the repository.
+2. On GitHub open **Settings, then Pages**.
+3. Under **Build and deployment** choose **Deploy from a branch**, select `main` and `/ (root)`, then Save.
+4. After a minute the site is live at the address at the top of this file.
+
+Netlify alternative: drag the folder onto app.netlify.com/drop. The `_headers` file is then applied automatically.
+
+## 11. Technologies
+HTML5, CSS3 (Flexbox, Grid, media queries, animations), plain JavaScript, jQuery 3.7.1, Leaflet 1.9.4, OpenStreetMap tiles, Google Maps embed, Font Awesome 7.2.0, Google Fonts (Roboto), Git and GitHub.
+
+## 12. Project Structure
+```
+.
+├── index.html  about.html  services.html  get-involved.html
+├── enquiry.html  contact.html  404.html
+├── robots.txt  sitemap.xml  _headers  README.md
 ├── css/
 │   └── style.css
-│
-├── images/
-│   ├── home-page.png
-│   ├── about-page.png
-│   ├── services-page.png
-│   ├── get-involved-page.png
-│   ├── enquiries-page.png
-│   └── mobile-view.png
-│
-├── video/
-│   └── [video-file]
-│
-└── README.md
+├── js/
+│   ├── head.js  config.js  data.js
+│   ├── main.js  ui.js  listings.js  map.js  forms.js
+├── images/            (optimised photos, logos, event posters, hero video, favicons)
+└── vendor/
+    ├── jquery/  leaflet/  fontawesome/
+```
 
-Update this structure so that it exactly matches the actual files and folders in the submitted repository.
+## 13. Use of AI Tools
+Claude (Anthropic) was used to help review the Part 2 site, write and test the Part 3 JavaScript, restructure the HTML, and draft this README. The author reviewed and tested the result and is responsible for the submitted work.
 
-12. Accessibility and Usability Considerations
-The website was developed with usability in mind.
+## 14. Screenshots (Part 2 version)
+<img width="1920" height="1200" alt="Home page" src="https://github.com/user-attachments/assets/f364a682-fd10-4547-9dea-53e95a379e32" />
 
-Considerations include:
+<img width="1920" height="1200" alt="Home page, about and footer" src="https://github.com/user-attachments/assets/23d89a5f-2539-4550-9fb7-d9ec961b9994" />
 
-Consistent navigation between pages.
+## 15. References (IIE Harvard style)
+Agafonkin, V. (2023) *Leaflet: an open-source JavaScript library for interactive maps*, version 1.9.4. Available at: https://leafletjs.com/ (Accessed: 1 November 2026).
 
-Clear headings and content hierarchy.
+Font Awesome (2026) *Font Awesome documentation: Use Font Awesome on the web*. Available at: https://docs.fontawesome.com/web/ (Accessed: 1 November 2026).
 
-Readable text and appropriate contrast.
+Formspree (n.d.) *Formspree: form backend*. Available at: https://formspree.io/ (Accessed: 1 November 2026).
 
-Responsive layouts for different screen sizes.
+GitHub (n.d.) *About GitHub Pages*. Available at: https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages (Accessed: 1 November 2026).
 
-Alternative text for relevant images.
+Google (n.d.) *Get started with the Google Fonts API*. Google for Developers. Available at: https://developers.google.com/fonts/docs/getting_started (Accessed: 1 November 2026).
 
-Clear links and interactive elements.
+Google (n.d.) *The Maps Embed API overview*. Google for Developers. Available at: https://developers.google.com/maps/documentation/embed/get-started (Accessed: 1 November 2026).
 
-Appropriate fallback content where required.
+Google Search Central (n.d.) *SEO starter guide*. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide (Accessed: 1 November 2026).
 
-Avoiding unnecessary complexity in navigation.
+Mozilla Developer Network (2026) *Content Security Policy (CSP)*. MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP (Accessed: 1 November 2026).
 
-The HTML video implementation also allows fallback content to be provided for browsers that do not support the relevant video element. 
-M
-MDN Web Docs
+Mozilla Developer Network (2026) *CSS media queries*. MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries (Accessed: 1 November 2026).
 
-13. References
-The following sources were consulted during the development of the website.
+Mozilla Developer Network (2026) *Intersection Observer API*. MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API (Accessed: 1 November 2026).
 
-Technical References
-Font Awesome. (2026). Font Awesome documentation: Use Font Awesome on the web. Available at: https://docs.fontawesome.com/web/ (Accessed: 18 September 2026).
+Mozilla Developer Network (2026) *prefers-reduced-motion*. MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion (Accessed: 1 November 2026).
 
-Google. (n.d.). Get started with the Google Fonts API. Google for Developers. Available at: https://developers.google.com/fonts/docs/getting_started (Accessed: 18 September 2026).
+OpenJS Foundation (2023) *jQuery 3.7.1*. Available at: https://jquery.com/ (Accessed: 1 November 2026).
 
-Google. (n.d.). The Maps Embed API overview. Google for Developers. Available at: https://developers.google.com/maps/documentation/embed/get-started (Accessed: 18 September 2026).
+OpenStreetMap contributors (n.d.) *Copyright and licence*. Available at: https://www.openstreetmap.org/copyright (Accessed: 1 November 2026).
 
-Mozilla Developer Network. (2026). CSS media queries. MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries (Accessed: 18 September 2026).
+OWASP (n.d.) *Cross Site Scripting Prevention Cheat Sheet*. Available at: https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html (Accessed: 1 November 2026).
 
-Mozilla Developer Network. (2026). CSS flexible box layout. MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout (Accessed: 18 September 2026).
+Schema.org (n.d.) *Organization* and *FAQPage*. Available at: https://schema.org/ (Accessed: 1 November 2026).
 
-Mozilla Developer Network. (2026). <video> HTML video embed element. MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video (Accessed: 18 September 2026).
+Sitemaps.org (n.d.) *Sitemaps XML format*. Available at: https://www.sitemaps.org/protocol.html (Accessed: 1 November 2026).
 
-Additional Project Sources
-Add any other sources that were actually used in the development of this website below.
-
-[Image/source used on website]
-
-[Video source, if externally obtained]
-
-[Tutorial/documentation actually consulted]
-
-[Font or icon source, if different from those listed above]
-
-Do not add sources that were not actually used. References should provide an accurate record of the resources consulted during development.
-
-14. Academic Integrity and Original Work
-The website was developed as an individual project using HTML and CSS, with external technical documentation consulted where necessary.
-
-External resources, libraries, fonts, icons, and documentation used in the development process are acknowledged in the References section.
-
-Where third-party resources are incorporated into the website, they should be used in accordance with the applicable licence or usage requirements.
-
-15. Final Project Status
-
-The final website represents the progression of the original Part 1 proposal
-through feedback, development and refinement.
-
-The project documentation has been updated to ensure that:
-
-- the documented pages correspond with the implemented website;
-- feedback from Part 1 is explicitly recorded;
-- changes resulting from feedback are explained;
-- the development process is recorded chronologically;
-- the technical implementation is documented;
-- external resources are acknowledged using IIE Harvard-style referencing; and
-- the README reflects the final state of the website.
-
-**Final Submission Date:** 18 September 2026
-
-
+W3C (n.d.) *WAI-ARIA Authoring Practices Guide: accordion, tabs and dialog (modal) patterns*. Available at: https://www.w3.org/WAI/ARIA/apg/patterns/ (Accessed: 1 November 2026).
