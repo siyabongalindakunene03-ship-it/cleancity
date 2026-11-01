@@ -1,221 +1,228 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-ZA">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clean city web site</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://tile.openstreetmap.org; media-src 'self'; connect-src 'self' https://formspree.io; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Recycling Services in Johannesburg | Clean City</title>
+    <meta name="description" content="Explore Clean City recycling services: free drop-off, household pick-up, business collection, clean-ups and workshops in Braamfontein, Newtown and Hillbrow." />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Siyabonga Linda Kunene" />
+    <meta name="theme-color" content="#053666" />
+    <link rel="canonical" href="https://siyabongalindakunene03-ship-it.github.io/cleancity/services.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Clean City" />
+    <meta property="og:locale" content="en_ZA" />
+    <meta property="og:title" content="Recycling Services in Johannesburg | Clean City" />
+    <meta property="og:description" content="Explore Clean City recycling services: free drop-off, household pick-up, business collection, clean-ups and workshops in Braamfontein, Newtown and Hillbrow." />
+    <meta property="og:url" content="https://siyabongalindakunene03-ship-it.github.io/cleancity/services.html" />
+    <meta property="og:image" content="https://siyabongalindakunene03-ship-it.github.io/cleancity/images/banner-johannesburg-street.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"
-      crossorigin="anonymous"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/head.js"></script>
   </head>
   <body>
-
-    <!-- Header Section -->
-
-    <section class="sub-header-services">
-      <nav>
-        <a href="index.html"
-          ><img src="images/clean-city-logo-reversed.png" alt="Logo"
-        /></a>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="sub-header-services">
+      <nav aria-label="Main navigation">
+        <a href="index.html"><img src="images/clean-city-logo-reversed.png" alt="Clean City – home" width="150" height="44" /></a>
         <div class="nav-links" id="navLinks">
-          <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+          <button type="button" class="menu-close" aria-label="Close menu"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
           <ul id="menuItems">
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
-            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="services.html" aria-current="page">SERVICES</a></li>
             <li><a href="get-involved.html">GET INVOLVED</a></li>
-            <li><a href="enquiries.html">ENQUIRIES</a></li>
+            <li><a href="enquiry.html">ENQUIRIES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
-        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
       </nav>
-
       <div class="sub-text-box">
         <h1>How Clean City Improves Communities</h1>
-        <p>
-          Clean City is a community-driven initiative that aims to promote sustainable practices and environmental responsibility.<br /> We work with local residents, businesses, and organizations to reduce waste, increase recycling, and create cleaner, healthier communities. 
-        </p>
+        <p>We work with residents, businesses and organisations to reduce waste, increase recycling and create cleaner, healthier communities.</p>
       </div>
-    </section>
-
-    <!--- Services content --->
-
-    <!--- Programes --->
-    <section class="programes">
-      <h1>Our Programes</h1>
-      <p>
-        We offer a range of programs and services to help keep our city clean
-        and beautiful. From waste management to community clean-up events, we
-        are dedicated to making a positive impact on our environment.
-      </p>
-
-      <div class="row">
-        <div class="programe-col">
-          <h3>Waste Management</h3>
-          <p>
-            Effective waste management is crucial for maintaining a clean and
-            healthy environment. We are committed to providing efficient and
-            sustainable waste disposal solutions for our community. One strategy
-            we employ is implementing comprehensive recycling programs to reduce
-            the amount of waste sent to landfills.
-          </p>
-        </div>
-        <div class="programe-col">
-          <h3>Community Clean-Up</h3>
-          <p>
-            Engaging the community in clean-up efforts is essential for
-            maintaining a clean and healthy environment. We are committed to
-            providing efficient and sustainable waste disposal solutions for our
-            community. One strategy we employ is implementing comprehensive
-            recycling programs to reduce the amount of waste sent to landfills.
-          </p>
-        </div>
-        <div class="programe-col">
-          <h3>Recycling Initiatives</h3>
-          <p>
-            Promoting recycling and waste reduction is crucial for environmental
-            sustainability. We are committed to providing efficient and
-            sustainable waste disposal solutions for our community. One strategy
-            we employ is implementing comprehensive recycling programs to reduce
-            the amount of waste sent to landfills.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Areas Served -->
-
-    <section class="areas-served">
-      <h1>Areas Served</h1>
-      <p>
-        We are proud to serve a wide range of areas in our city, providing
-        efficient and sustainable waste management solutions to keep our
-        community clean and healthy.
-      </p>
-
-      <div class="row">
-        <div class="areas-served-col">
-          <img src="images/Braamfontein.jpg" />
-          <div class="layer">
-            <h3>Braamfontein</h3>
+    </header>
+    <main id="main">
+      <section class="programes" aria-labelledby="programmes-title">
+        <h2 id="programmes-title">Our Programmes</h2>
+        <p>Three programmes sit behind everything we do. Use the search below to find the exact service you need.</p>
+        <div class="row">
+          <div class="programe-col" id="waste-management" data-reveal>
+            <h3>Waste Management</h3>
+            <p>We provide dependable waste collection for homes and businesses and run a recycling programme that reduces the waste sent to landfill.</p>
+          </div>
+          <div class="programe-col" id="community-clean-up" data-reveal>
+            <h3>Community Clean-Up</h3>
+            <p>Residents, volunteers and partners work side by side to clear litter and restore streets, parks and public squares.</p>
+          </div>
+          <div class="programe-col" id="recycling-initiatives" data-reveal>
+            <h3>Recycling Initiatives</h3>
+            <p>Workshops, school sessions and drop-off points make it simple for everyone to sort and recycle the right way.</p>
           </div>
         </div>
-        <div class="areas-served-col">
-          <img src="images/Newtown.png" />
-          <div class="layer">
-            <h3>Newtown</h3>
+      </section>
+
+      <section class="listing" id="find-a-service" aria-labelledby="find-title">
+        <h2 id="find-title">Find a Service</h2>
+        <p>Search by name, filter by category or area, and sort the list the way that suits you.</p>
+        <div class="filter-bar" role="search" aria-label="Search services">
+          <div class="filter filter-wide"><label for="service-search">Search services</label><input type="search" id="service-search" placeholder="For example: pick-up, school, glass" autocomplete="off" /></div>
+          <div class="filter"><label for="service-category">Category</label><select id="service-category"></select></div>
+          <div class="filter"><label for="service-area">Area</label><select id="service-area"></select></div>
+          <div class="filter"><label for="service-sort">Sort by</label>
+            <select id="service-sort">
+              <option value="name-asc">Name (A to Z)</option>
+              <option value="name-desc">Name (Z to A)</option>
+              <option value="price-asc">Price (low to high)</option>
+              <option value="price-desc">Price (high to low)</option>
+            </select></div>
+          <button type="button" id="service-clear">Clear filters</button>
+        </div>
+        <p class="results-count" id="service-count" role="status" aria-live="polite"></p>
+        <div class="card-grid" id="service-list"></div>
+        <noscript><p class="empty-state">Turn on JavaScript to search our services, or visit our <a href="enquiry.html">enquiry page</a> and tell us what you need.</p></noscript>
+      </section>
+      <section class="guide" id="recycling-guide" aria-labelledby="guide-title">
+        <h2 id="guide-title">Recycling Guide: What Goes Where</h2>
+        <p>We recycle paper, plastic, glass and metal. Choose a material to see what we accept.</p>
+        <div class="tabs" data-tabs>
+          <div class="tab-list" role="tablist" aria-label="Recyclable materials">
+          <button type="button" role="tab" id="tab-paper" aria-controls="guide-paper" aria-selected="true" tabindex="0">Paper</button>
+          <button type="button" role="tab" id="tab-plastic" aria-controls="guide-plastic" aria-selected="false" tabindex="-1">Plastic</button>
+          <button type="button" role="tab" id="tab-glass" aria-controls="guide-glass" aria-selected="false" tabindex="-1">Glass</button>
+          <button type="button" role="tab" id="tab-metal" aria-controls="guide-metal" aria-selected="false" tabindex="-1">Metal</button>
+          </div>
+        <div role="tabpanel" id="guide-paper" aria-labelledby="tab-paper">
+          <div class="tab-panel">
+            <img src="images/recycling-paper-cardboard.jpg" alt="Flattened cardboard and paper stacked for recycling" width="900" height="600" loading="lazy" decoding="async" />
+            <div class="tab-text">
+              <h3>Recycling paper</h3>
+              <p>Keep paper dry. Wet paper cannot be recycled.</p>
+              <div class="do-dont">
+                <div><h4>Yes, please</h4><ul class="yes"><li>Newspapers and magazines</li><li>Cardboard boxes (flattened)</li><li>Clean office paper and envelopes</li></ul></div>
+                <div><h4>Please do not</h4><ul class="no"><li>Greasy pizza boxes</li><li>Wax or laminated paper</li><li>Used tissues and paper towels</li></ul></div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="areas-served-col">
-          <img src="images/Hillbrow.jpg" />
-          <div class="layer">
-            <h3>Hillbrow</h3>
+        <div role="tabpanel" id="guide-plastic" aria-labelledby="tab-plastic" hidden>
+          <div class="tab-panel">
+            <img src="images/recycling-plastic-bottles.jpg" alt="Pile of plastic bottles ready for recycling" width="900" height="599" loading="lazy" decoding="async" />
+            <div class="tab-text">
+              <h3>Recycling plastic</h3>
+              <p>Remove lids and flatten bottles to save space.</p>
+              <div class="do-dont">
+                <div><h4>Yes, please</h4><ul class="yes"><li>Rinsed drink and cleaning bottles</li><li>Yoghurt tubs and food containers</li><li>Clean plastic bags (bundled together)</li></ul></div>
+                <div><h4>Please do not</h4><ul class="no"><li>Plastic with food still inside</li><li>Polystyrene foam</li><li>Nappies and medical waste</li></ul></div>
+              </div>
+            </div>
           </div>
         </div>
+        <div role="tabpanel" id="guide-glass" aria-labelledby="tab-glass" hidden>
+          <div class="tab-panel">
+            <img src="images/recycling-glass-bottles.jpg" alt="Heap of crushed and whole glass bottles" width="900" height="600" loading="lazy" decoding="async" />
+            <div class="tab-text">
+              <h3>Recycling glass</h3>
+              <p>Take the lids off and rinse. There is no need to remove labels.</p>
+              <div class="do-dont">
+                <div><h4>Yes, please</h4><ul class="yes"><li>Bottles and jars of any colour</li><li>Rinsed sauce and jam jars</li></ul></div>
+                <div><h4>Please do not</h4><ul class="no"><li>Mirrors and window glass</li><li>Light bulbs</li><li>Ceramics and crockery</li></ul></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" id="guide-metal" aria-labelledby="tab-metal" hidden>
+          <div class="tab-panel">
+            <img src="images/recycling-metal-cans.jpg" alt="Crushed aluminium and steel cans" width="900" height="600" loading="lazy" decoding="async" />
+            <div class="tab-text">
+              <h3>Recycling metal</h3>
+              <p>Rinse tins and squash cans to save space.</p>
+              <div class="do-dont">
+                <div><h4>Yes, please</h4><ul class="yes"><li>Aluminium drink cans</li><li>Steel food tins</li><li>Clean aluminium foil and trays</li></ul></div>
+                <div><h4>Please do not</h4><ul class="no"><li>Aerosol cans that are not empty</li><li>Paint tins with paint inside</li><li>Batteries</li></ul></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="areas-served" aria-labelledby="areas-title">
+        <h2 id="areas-title">Areas We Serve</h2>
+        <p>We serve Braamfontein, Newtown and Hillbrow with reliable waste management and recycling solutions that keep communities clean and healthy.</p>
+        <div class="row">
+        <div class="areas-served-col" data-reveal>
+          <a href="get-involved.html#locations" aria-label="See Braamfontein on the map">
+            <img src="images/braamfontein-skyline-johannesburg.jpg" alt="Skyline of Braamfontein in Johannesburg" width="1200" height="800" loading="lazy" decoding="async" />
+            <div class="layer"><h3>Braamfontein</h3></div>
+          </a>
+        </div>
+        <div class="areas-served-col" data-reveal>
+          <a href="get-involved.html#locations" aria-label="See Newtown on the map">
+            <img src="images/newtown-plaza-johannesburg.jpg" alt="Public square in Newtown, Johannesburg" width="1000" height="750" loading="lazy" decoding="async" />
+            <div class="layer"><h3>Newtown</h3></div>
+          </a>
+        </div>
+        <div class="areas-served-col" data-reveal>
+          <a href="get-involved.html#locations" aria-label="See Hillbrow on the map">
+            <img src="images/hillbrow-street-johannesburg.jpg" alt="Busy street in Hillbrow, Johannesburg" width="1000" height="666" loading="lazy" decoding="async" />
+            <div class="layer"><h3>Hillbrow</h3></div>
+          </a>
+        </div>
+        </div>
+      </section>
+      <section class="cta" data-reveal>
+        <h2>Not Sure Which Service You Need?</h2>
+        <p class="cta-text">Tell us what you would like to recycle and we will point you to the right service and price.</p>
+        <div class="hero-actions"><a href="enquiry.html" class="hero-btn">Make an enquiry</a></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-cols">
+        <div>
+          <h2>About Clean City</h2>
+          <p>Clean City Recycling is dedicated to promoting sustainable practices and environmental responsibility in Johannesburg. We help residents, businesses and schools reduce waste and protect our environment.</p>
+          <div class="icons">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Clean City on Facebook (opens in a new tab)"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Clean City on X (opens in a new tab)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Clean City on Instagram (opens in a new tab)"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Clean City on LinkedIn (opens in a new tab)"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Recycling services</a></li>
+            <li><a href="get-involved.html">Volunteer and events</a></li>
+            <li><a href="enquiry.html">Make an enquiry</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <address>
+            <p>Email: <a href="mailto:info@cleancity.org">info@cleancity.org</a></p>
+            <p>Phone: <a href="tel:+27823456789">082&nbsp;345&nbsp;6789</a></p>
+            <p>Braamfontein, Johannesburg, Gauteng, South Africa</p>
+          </address>
+        </div>
       </div>
-    </section>
-
-    <!-- Recyclable Items -->
-
-    <section class="recyclable-items">
-      <h1>What we recycle</h1>
-      <p>
-        We are committed to promoting recycling and waste reduction for
-        environmental sustainability. By recycling items such as paper, plastic,
-        glass, and metal, we can reduce the amount of waste sent to landfills
-        and conserve natural resources for future generations.
-      </p>
-
-      <div class="row">
-        <div class="recyclable-item-col">
-          <img src="images/paper.jpg" />
-          <h3>Paper</h3>
-          <p>
-            Recycling paper is an important step in reducing waste and
-            conserving natural resources. By recycling paper, we can reduce the
-            amount of waste sent to landfills, save trees, and conserve energy
-            and water used in the production of new paper products.
-          </p>
-        </div>
-        <div class="recyclable-item-col">
-          <img src="images/plastic.jpg" />
-          <h3>Plastic</h3>
-          <p>
-            Recycling plastic is essential for reducing environmental pollution
-            and conserving natural resources. By recycling plastic, we can
-            reduce the amount of waste sent to landfills and decrease the demand
-            for virgin plastic production.
-          </p>
-        </div>
-        <div class="recyclable-item-col">
-          <img src="images/glass.jpg" />
-          <h3>Glass</h3>
-          <p>
-            Recycling glass is an effective way to reduce waste and conserve
-            natural resources. By recycling glass, we can reduce the amount of
-            waste sent to landfills and save energy used in the production of
-            new glass products.
-          </p>
-        </div>
-        <div class="recyclable-item-col">
-          <img src="images/metal.jpg" />
-          <h3>Metal</h3>
-          <p>
-            Recycling metal is crucial for conserving natural resources and
-            reducing environmental impact. By recycling metal, we can reduce the
-            need for mining and processing raw materials, thus saving energy and
-            reducing pollution.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    
-
-    
-
-
-
-    
-
-    <!---- Footer --->
-
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>Clean City Recycling is dedicated to promoting sustainable practices and environmental responsibility in our community. Searching for ways to reduce waste and protect our environment.</p>
-        <div class="icons">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-        </div>
-        <p>Founded in <i class="fa-regular fa-copyright"></i> 2023 Clean City Recycling Company. All rights reserved.</p>
-    </section>
-
-
-
-
-
-    <!--- javascript for toggle menu --->
-
-    <script>
-      var navLinks = document.getElementById("navLinks");
-
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
+      <p class="footer-bottom">&copy; 2026 Clean City Recycling Company. All rights reserved.</p>
+    </footer>
+    <script src="vendor/jquery/jquery.min.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/ui.js" defer></script>
+    <script src="js/listings.js" defer></script>
   </body>
 </html>
