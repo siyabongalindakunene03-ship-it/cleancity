@@ -266,8 +266,10 @@ h3 {
 
 .areas-served-col img{
     width: 100%;
+    height: 240px;
     display: block;
-    
+    object-fit: cover;
+    object-position: center;
 }
 
 .layer{
@@ -280,7 +282,7 @@ h3 {
     padding: 18px;
     box-sizing: border-box;
     transform: translateY(100%);
-    transition: transform 0.35s ease, background 0.35s ease;
+  transition: transform 0.35s ease, background 0.35s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1112,7 +1114,10 @@ main{ display: block; }
 .as-button{ background: none; border: 0; border-bottom: 2px solid transparent; cursor: pointer; font-family: inherit; padding: 0; }
 .programe-col .text-link{ display: block; text-align: center; }
 .areas-served-col a{ display: block; color: inherit; text-decoration: none; }
-.recyclable-item-col img, .about-col img, .areas-served-col img, .event-col img{ height: auto; max-width: 100%; }
+.recyclable-item-col img, .about-col img,
+.event-col img{ height: auto; max-width: 100%; }
+
+.areas-served-col img{ max-width: 100%; }
 .recyclable-item-col img{ aspect-ratio: 3 / 2; object-fit: cover; }
 .teaser-link{ margin-top: 25px; }
 @media (hover: none){
