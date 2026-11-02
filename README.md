@@ -64,8 +64,8 @@ Home
 | Documentation | This README with changelog and references | this file |
 | Deployment | GitHub Pages (or Netlify) | section 10 |
 
-## 4. Feedback and Self-Review of the Part 2 Submission
-The Part 2 version was reviewed against the Part 3 brief and the following problems were found and fixed.
+## 4. Improvements Since Part 2 (Self-Review)
+No written lecturer feedback on Part 2 was available when Part 3 was started, so I reviewed my own Part 2 submission against the Part 3 brief, the WCAG accessibility guidelines and Google's SEO starter guide. The problems below are the ones I found myself, and each one was fixed in Part 3.
 
 | Problem found in Part 2 | Fix in Part 3 |
 |---|---|
@@ -86,8 +86,20 @@ The Part 2 version was reviewed against the Part 3 brief and the following probl
 | Grey text (#777) on white was below the 4.5:1 contrast minimum | Darkened to #555 |
 | Footer social icons were not links; footer text read "Founded in © 2023" | Icons are labelled links; footer text corrected |
 | README contained template instructions, a broken image and copied web-page labels | README rewritten |
+| Event cards mixed blue posters with plain photos, so the events list looked inconsistent (found 2 Nov 2026) | The three photo cards were replaced with matching blue posters, and all six posters are now PNG images listed in `js/data.js` |
+| Event poster text depended on the visitor's installed fonts when the posters were SVG files | Posters exported as PNG images, so the text looks the same on every device |
 
-## 5. Changelog (Part 3)
+## 5. Changelog
+Dates come from the commit history in this repository (`git log`).
+
+### Part 1 and Part 2
+
+| Date | Change | Reason |
+|---|---|---|
+| 17 Aug 2026 | Repository created and project planned (Part 1) | Start of the project |
+| 18 Sep 2026 | README revised with a project overview; Part 2 site submitted | Documentation |
+
+### Part 3
 
 | Date | Change | Reason |
 |---|---|---|
@@ -104,8 +116,11 @@ The Part 2 version was reviewed against the Part 3 brief and the following probl
 | 1 Nov 2026 | Added `_headers` and a Content-Security-Policy | Security |
 | 1 Nov 2026 | Updated event poster dates to upcoming dates | Content accuracy |
 | 1 Nov 2026 | Rewrote this README | Documentation |
+| 2 Nov 2026 | Added meta keywords to every page and shortened long titles | SEO |
+| 2 Nov 2026 | Replaced the three photo event cards with blue PNG posters and set all six poster paths in `js/data.js` | Consistent events list |
+| 2 Nov 2026 | Documented that the map needs a web address (Live Server or GitHub Pages) | Documentation accuracy |
 
-Earlier history (Part 1 and Part 2): the structure was planned (August 2026), the five-page site was built with a video banner, event posters and a Google Maps embed (September 2026), and the Contact page was replaced by Get Involved and Enquiries. In Part 3 a dedicated Contact page was added back because the brief requires it.
+In Part 2 the five-page site was built with a video banner, event posters and a Google Maps embed, and the Contact page was replaced by Get Involved and Enquiries. In Part 3 a dedicated Contact page was added back because the brief requires it.
 
 ## 6. SEO Strategy
 
@@ -171,7 +186,7 @@ Skip link; semantic landmarks; keyboard-operable menu, accordion, tabs, modal an
 
 ### Run locally
 1. Download or clone the repository.
-2. Double-click `index.html`. Everything works from the file, except the map tiles and Google directions which need an internet connection.
+2. Double-click `index.html` to view most of the site. The Leaflet map tiles and the Google directions need an internet connection, and OpenStreetMap only serves tiles to pages with a web address, so the map stays empty when the page is opened straight from the disk. Use step 3 or the live site to test the map.
 3. For the most accurate test, serve the folder instead (for example with the VS Code **Live Server** extension, or `python -m http.server 8000` and open http://localhost:8000).
 
 ### Test checklist
@@ -199,7 +214,7 @@ Prices, event dates and places are sample data in `js/data.js`.
 Netlify alternative: drag the folder onto app.netlify.com/drop. The `_headers` file is then applied automatically.
 
 ## 11. Technologies
-HTML5, CSS3 (Flexbox, Grid, media queries, animations), plain JavaScript, jQuery 3.7.1, Leaflet 1.9.4, OpenStreetMap tiles, Google Maps embed, Font Awesome 7.2.0, Google Fonts (Roboto), Git and GitHub.
+HTML5, CSS3 (Flexbox, Grid, media queries, animations), plain JavaScript, jQuery 3.7.1, Leaflet 1.9.4, OpenStreetMap tiles, Google Maps embed, Font Awesome 7.2.0, Google Fonts (Roboto), Git and GitHub. Photographs were sourced from Pexels, and the event posters are original SVG designs exported as PNG images.
 
 ## 12. Project Structure
 ```
@@ -218,7 +233,20 @@ HTML5, CSS3 (Flexbox, Grid, media queries, animations), plain JavaScript, jQuery
 ```
 
 ## 13. Use of AI Tools
-Claude (Anthropic) was used to help review the Part 2 site, write and test the Part 3 JavaScript, restructure the HTML, and draft this README. The author reviewed and tested the result and is responsible for the submitted work.
+Claude (Anthropic) was used to help review the Part 2 site, write and test the Part 3 JavaScript, restructure the HTML, design the event posters, and draft this README. The author reviewed and tested the result and is responsible for the submitted work.
+
+## 13a. Image Sources and Learning Resources
+- **Photographs:** the photographs on the site (for example the skyline, recycling and volunteer images in `images/`) were downloaded from Pexels, which provides free stock photos under the Pexels licence. They were renamed and compressed for the web (section 7). Add the photographer's name for each image here before submitting: `[IMAGE FILE NAME] – [PHOTOGRAPHER] – [PEXELS PAGE LINK]`.
+- **Event posters, logo and icons:** created for this project. The six posters share one design (dark blue background, teal accents, skyline silhouette) so that every event card looks the same.
+- **Learning resources:** I used the Bro Code YouTube channel to learn and revise HTML, CSS and JavaScript techniques for this project. The videos are listed in the references.
+
+## 13b. Limitations and Future Work
+- The enquiry form runs in demo mode until a Formspree endpoint is added to `js/config.js`, so no enquiry is actually delivered yet.
+- Prices, events and places are sample data in `js/data.js`. A real version would load them from a database or a content management system.
+- The social media icons link to each network's home page until the organisation has real profiles.
+- The map tiles depend on OpenStreetMap, so the map is empty when offline or when the page is opened straight from disk.
+- Keyword choices were not yet checked with a keyword research tool.
+- Testing was done by hand in the browser (section 10). Automated accessibility checks, such as Lighthouse, would be a useful next step.
 
 ## 14. Screenshots (Part 2 version)
 <img width="1920" height="1200" alt="Home page" src="https://github.com/user-attachments/assets/f364a682-fd10-4547-9dea-53e95a379e32" />
@@ -252,7 +280,13 @@ OpenJS Foundation (2023) *jQuery 3.7.1*. Available at: https://jquery.com/ (Acce
 
 OpenStreetMap contributors (n.d.) *Copyright and licence*. Available at: https://www.openstreetmap.org/copyright (Accessed: 1 November 2026).
 
-OWASP (n.d.) *Cross Site Scripting Prevention Cheat Sheet*. Available at: https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html (Accessed: 1 November 2026).
+OWASP (n.d.)* Cross-Site Scripting Prevention Cheat Sheet*. Available at: https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html (Accessed: 1 November 2026).
+
+Bro Code (n.d.) *[VIDEO TITLE]* [YouTube video]. Available at: [VIDEO LINK] (Accessed: [DATE]).
+
+Pexels (n.d.) *Pexels: free stock photos and videos*. Available at: https://www.pexels.com/ (Accessed: 2 November 2026).
+
+Pexels (n.d.) *Pexels licence*. Available at: https://www.pexels.com/license/ (Accessed: 2 November 2026).
 
 Schema.org (n.d.) *Organization* and *FAQPage*. Available at: https://schema.org/ (Accessed: 1 November 2026).
 
