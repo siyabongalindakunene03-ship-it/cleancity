@@ -37,6 +37,7 @@
 
     function setOpen(open) {
       menu.classList.toggle('is-open', open);
+      doc.documentElement.classList.toggle('menu-open', open);
       openBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
       if (open && closeBtn) { closeBtn.focus(); }
       if (!open && doc.activeElement && menu.contains(doc.activeElement)) { openBtn.focus(); }

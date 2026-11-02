@@ -1,5 +1,10 @@
 /* consistent box model and prevent scrollbar layout shift */
 html{ overflow-y: scroll; }
+
+/* one overlay used by every banner so they all share the same theme */
+:root{
+    --banner-overlay: rgba(4,9,30,0.7);
+}
 *,*::before,*::after{
     box-sizing: border-box;
 }
@@ -42,7 +47,7 @@ html{ overflow-y: scroll; }
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background: linear-gradient(var(--banner-overlay),var(--banner-overlay));
     z-index: 1;
 }
 
@@ -111,6 +116,7 @@ nav img{
 
 .text-box h1{
     font-size: 62px;
+    color: #fff;
 }
 
 .text-box p{
@@ -151,7 +157,7 @@ nav .fa-solid{
     }
 
     .nav-links{
-        position: absolute;
+        position: fixed;
         background: #2c3e50;
         height: 100vh;
         width: 200px;
@@ -357,11 +363,13 @@ h3 {
 }
 
 .testimonial-col img{
-    height: 40px;
+    width: 72px;
+    height: 72px;
+    flex: 0 0 72px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 30px;
-    margin-left: 50px;
+    margin-right: 20px;
+    margin-left: 0;
 }
 
 .testimonial-col p{
@@ -382,9 +390,19 @@ h3 {
 @media (max-width: 700px){
     .testimonial-col{ flex-basis: 100%; }
 
+    .testimonial-col{
+        flex-direction: column;
+    }
+
     .testimonial-col img{
         margin-left: 0px;
-        margin-right: 15px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-col .stars{
+        white-space: nowrap;
+        font-size: clamp(10px, 3.4vw, 14px);
     }
     
 }
@@ -440,7 +458,7 @@ h3 {
 .cta {
     margin: 100px auto;
     width: 80%;
-    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../images/banner-volunteers-sorting-recycling.jpg');
+    background: linear-gradient(var(--banner-overlay),var(--banner-overlay)),url('../images/banner-volunteers-sorting-recycling.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -493,7 +511,7 @@ h3 {
     min-height: 50vh;
     width: 100%;
     position: relative;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../images/banner-hillbrow-tower-skyline.jpg');
+    background-image: linear-gradient(var(--banner-overlay),var(--banner-overlay)),url('../images/banner-hillbrow-tower-skyline.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -513,9 +531,15 @@ h3 {
 
 /* responsive behavior: make hero/subtext box flow on small screens */
 @media (max-width: 700px){
+    /* hero text sits above the dark overlay (z 1) but below the menu and video button */
+    .header nav{ z-index: 3; }
+    .video-toggle{ z-index: 4; }
     .header .text-box,
     .sub-header .text-box{
-        position: static;
+        position: relative;
+        z-index: 2;
+        left: auto;
+        top: auto;
         transform: none;
         margin: 24px auto 0;
         width: calc(100% - 32px);
@@ -593,7 +617,7 @@ h3 {
     min-height: 50vh;
     width: 100%;
     position: relative;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../images/banner-johannesburg-street.jpg');
+    background-image: linear-gradient(var(--banner-overlay),var(--banner-overlay)),url('../images/banner-johannesburg-street.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -618,7 +642,7 @@ h3 {
     min-height: 50vh;
     width: 100%;
     position: relative;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../images/banner-mandela-bridge-night.jpg');
+    background-image: linear-gradient(var(--banner-overlay),var(--banner-overlay)),url('../images/banner-mandela-bridge-night.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -642,7 +666,7 @@ h3 {
 .cta-Involved {
     margin: 100px auto;
     width: 80%;
-    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../images/banner-volunteers-sorting-recycling.jpg');
+    background: linear-gradient(var(--banner-overlay),var(--banner-overlay)),url('../images/banner-volunteers-sorting-recycling.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -1005,6 +1029,12 @@ main{ display: block; }
 .nav-links ul li a[aria-current="page"]{ color: #5be5d1; }
 .nav-links ul li a[aria-current="page"]::after{ width: 100%; }
 
+/* page cannot scroll behind the open mobile menu */
+@media (max-width: 700px){
+    html.menu-open{ overflow: hidden; }
+    .nav-links{ overscroll-behavior: contain; overflow-y: auto; }
+}
+
 @media (max-width: 700px){
     .menu-toggle, .menu-close{ display: block; }
     .nav-links{ visibility: hidden; transition: right .35s ease, visibility 0s linear .35s; }
@@ -1335,7 +1365,7 @@ pre.email-value{ white-space: pre-wrap; font-family: inherit; background: #fff; 
 .footer-cols li{ padding: 3px 0; font-size: 14px; }
 .footer .icons{ text-align: left; margin: 10px 0; }
 .footer .icons a{ display: inline-block; margin-right: 8px; text-decoration: none; }
-.footer .icons .fa-brands{ color: #fff; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; width: 38px; height: 38px; line-height: 38px; text-align: center; font-size: 16px; margin: 0; }
+.footer .icons .fa-brands{ color: #fff; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; width: 38px; height: 38px; line-height: 36px; text-align: center; font-size: 16px; margin: 0; padding: 0; }
 .footer .icons a:hover .fa-brands{ background: #5be5d1; color: #053666; }
 .footer-bottom{ text-align: center; border-top: 1px solid rgba(255,255,255,.2); margin-top: 24px; padding-top: 14px; font-size: 13px; }
 
@@ -1353,7 +1383,7 @@ pre.email-value{ white-space: pre-wrap; font-family: inherit; background: #fff; 
     min-height: 50vh;
     width: 100%;
     position: relative;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../images/volunteers-joining-hands.jpg');
+    background-image: linear-gradient(var(--banner-overlay),var(--banner-overlay)),url('../images/volunteers-joining-hands.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
